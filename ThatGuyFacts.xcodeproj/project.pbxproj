@@ -41,7 +41,6 @@
 		4C9343CC11FC407000F2276E /* ListTabBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9343C911FC407000F2276E /* ListTabBarIcon.png */; };
 		4C9343CD11FC407000F2276E /* RandomTabBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9343CA11FC407000F2276E /* RandomTabBarIcon.png */; };
 		4CB28B741206C2B0009BEA56 /* Fact.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB28B731206C2B0009BEA56 /* Fact.m */; };
-		4CB6BFA1121E7AE30020C8B5 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB6BFA0121E7AE30020C8B5 /* TableCell.xib */; };
 		4CC85C011210133000F42304 /* ListTabBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC85C001210133000F42304 /* ListTabBarIcon@2x.png */; };
 		4CC85C0B1210175700F42304 /* SettingsTabBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC85C0A1210175700F42304 /* SettingsTabBarIcon@2x.png */; };
 		4CDB424A132AE7EB0072C602 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB4249132AE7EB0072C602 /* iTunesArtwork */; };
@@ -94,7 +93,6 @@
 		4CA20EE61212B287004E1B89 /* ChuckNorrisFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ChuckNorrisFacts.app; path = ThatGuyFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB28B721206C2B0009BEA56 /* Fact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fact.h; sourceTree = "<group>"; };
 		4CB28B731206C2B0009BEA56 /* Fact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fact.m; sourceTree = "<group>"; };
-		4CB6BFA0121E7AE30020C8B5 /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		4CC85C001210133000F42304 /* ListTabBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListTabBarIcon@2x.png"; sourceTree = "<group>"; };
 		4CC85C0A1210175700F42304 /* SettingsTabBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SettingsTabBarIcon@2x.png"; sourceTree = "<group>"; };
 		4CDB4249132AE7EB0072C602 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 				4C5177091212AD4B004A34B0 /* Graphics */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* ThatGuyFacts-Info.plist */,
-				4CB6BFA0121E7AE30020C8B5 /* TableCell.xib */,
 				4C4AFC2C11FC519E00499C70 /* Settings.xib */,
 				4C01C82C11D76DE300C46BB2 /* List.xib */,
 				4C01C82F11D76E0E00C46BB2 /* Random.xib */,
@@ -292,7 +289,6 @@
 				4CFB6CB111FEF39D00A982BC /* SettingsTabBarIcon.png in Resources */,
 				4CC85C011210133000F42304 /* ListTabBarIcon@2x.png in Resources */,
 				4CC85C0B1210175700F42304 /* SettingsTabBarIcon@2x.png in Resources */,
-				4CB6BFA1121E7AE30020C8B5 /* TableCell.xib in Resources */,
 				4C102FA8122A7BCC00D4CBFB /* RandomTabBarIcon@2x.png in Resources */,
 				4C102FAD122A80B600D4CBFB /* Icon@2x.png in Resources */,
 				4C102FF8122E59DF00D4CBFB /* SettingsPage.png in Resources */,
@@ -370,7 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -385,7 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
