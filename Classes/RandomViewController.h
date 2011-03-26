@@ -13,7 +13,7 @@
 
 #import "ThatGuyFactsAppDelegate.h"
 
-@interface RandomViewController : UIViewController <AVAudioPlayerDelegate>
+@interface RandomViewController : UIViewController <AVAudioPlayerDelegate, UIAlertViewDelegate>
 {
 
 	// label which displays the number of characters comprising of the currently displaying fact
@@ -25,9 +25,6 @@
 	
     // ui elements
 	IBOutlet UILabel *label;
-
-    // wehther to display the help bubble
-	bool displyRandomHelp;
     
     // currently displayed random fact
     Fact *fact;

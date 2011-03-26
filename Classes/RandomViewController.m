@@ -123,15 +123,21 @@
     
     // take care of the helper hint bubble thing
     
-	#if DEBUG
-    displyRandomHelp = YES;
-	#else
-    displyRandomHelp = [[NSUserDefaults standardUserDefaults] boolForKey:@"displyRandomHelp"];
-	#endif
-	
-	NSLog(@"display random help: %@", (displyRandomHelp ? @"yes" : @"no"));
+    bool displayRandomHelp = [[NSUserDefaults standardUserDefaults] boolForKey:@"displyRandomHelp"];
     
-    [[self.view viewWithTag:1] setHidden:!displyRandomHelp];
+    NSLog(@"display random help: %@", (displayRandomHelp ? @"yes" : @"no"));
+    
+    if (displayRandomHelp)
+    {
+        NSString *title = [NSString stringWithFormat:@"Hint"];
+        NSString *alertMessage = [NSString stringWithFormat:@"Touch the screen to show another random fact ..."];
+        NSString *ok = [NSString stringWithFormat:@"Ok"];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:alertMessage delegate:self cancelButtonTitle:ok otherButtonTitles:nil];
+        
+        [alert show];
+        [alert release];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -159,37 +165,15 @@
 	//
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    // set every time just to be sure
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"displyRandomHelp"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    NSLog(@"view was touched");
-    
-    if (displyRandomHelp == YES)
-    {
-        NSLog(@"hiding random help and disabling for future");
-        
-        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"displyRandomHelp"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        
-        // hide the helper view
-		UIView *image = [self.view viewWithTag:1];
-		
-		// begin animation
-		[UIView beginAnimations:nil context:NULL]; // animate the following:
-		
-		// move to new location
-		CGRect o = [image frame];
-		CGRect n = CGRectMake(o.origin.x, o.origin.y - 30, o.size.width, o.size.height);
-		[image setFrame:n];
-		
-		// make invisible
-		//[image setHidden:YES];
-		[image setAlpha:0.0f];
-		
-		// commit animation
-		[UIView setAnimationDuration:0.5];
-		[UIView commitAnimations];
-    }
-    
     [self randomize:self];
 }
 
