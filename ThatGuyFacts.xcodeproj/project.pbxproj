@@ -343,8 +343,8 @@
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				INFOPLIST_FILE = "ThatGuyFacts-Info.plist";
 				PRODUCT_NAME = ThatGuyFacts;
-				PROVISIONING_PROFILE = "D5BCB6F3-445E-487A-B153-402A212C0E04";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D5BCB6F3-445E-487A-B153-402A212C0E04";
+				PROVISIONING_PROFILE = "1C2E5CA2-0917-48FF-9F16-EE2431160B1D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1C2E5CA2-0917-48FF-9F16-EE2431160B1D";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -354,15 +354,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Dawson (97LTY2PKNA)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Dawson (97LTY2PKNA)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Michael Dawson";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Michael Dawson";
 				COPY_PHASE_STRIP = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ThatGuyFacts_Prefix.pch;
 				INFOPLIST_FILE = "ThatGuyFacts-Info.plist";
 				PRODUCT_NAME = ThatGuyFacts;
-				PROVISIONING_PROFILE = "D5BCB6F3-445E-487A-B153-402A212C0E04";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D5BCB6F3-445E-487A-B153-402A212C0E04";
+				PROVISIONING_PROFILE = "9A7EE4C3-BD37-4266-86CA-89B1DF6ACFBC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9A7EE4C3-BD37-4266-86CA-89B1DF6ACFBC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -372,15 +372,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Michael Dawson";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Dawson (97LTY2PKNA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Dawson (97LTY2PKNA)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B231DA92-8027-4CA7-8E6F-34730B7F1F14";
+				PROVISIONING_PROFILE = "1C2E5CA2-0917-48FF-9F16-EE2431160B1D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1C2E5CA2-0917-48FF-9F16-EE2431160B1D";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -389,7 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Michael Dawson";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Michael Dawson";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -397,8 +397,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B231DA92-8027-4CA7-8E6F-34730B7F1F14";
+				PROVISIONING_PROFILE = "9A7EE4C3-BD37-4266-86CA-89B1DF6ACFBC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9A7EE4C3-BD37-4266-86CA-89B1DF6ACFBC";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

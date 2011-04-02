@@ -377,8 +377,8 @@
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{53, 30}</string>
-				<string>{53, 30}</string>
+				<string>{30, 30}</string>
+				<string>{30, 30}</string>
 				<string>{30, 30}</string>
 			</object>
 		</object>
